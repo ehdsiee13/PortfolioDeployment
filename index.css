@@ -4,7 +4,7 @@ body {
     color: white;
     background: linear-gradient(to bottom, #0a0f1a, #000);
   }
-  
+
   .App-header {
     padding: 20px;
     text-align: center;
@@ -93,6 +93,7 @@ body {
     justify-content: center; /* Center the content horizontally in the row */
     align-items: flex-start; /* Align items to the top of the row */
     width: 100%;
+    margin-bottom: 9rem;
   }
 
 .App-profile {
@@ -185,22 +186,46 @@ body {
 
 
 
-/* About */
+/* About Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+
+.about-main-title {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
+.about-intro {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* About Section */
 .about-row {
   display: flex;
   justify-content: center; /* Center the entire row horizontally */
   align-items: center;
   text-align: center; /* Center the content inside each column */
-}
-
-.about-techtonic {
-  width: 500px; /* Adjust size as needed */
-  height: 500px; /* Adjust size as needed */
-  object-fit: cover;
+  gap: 30px;
+  margin-bottom: 0px;
 }
 
 .about-item {
   text-align: center;
+}
+
+/* TechTonic Innovations */
+.about-techtonic {
+  width: 500px; /* Adjust size as needed */
+  height: 500px; /* Adjust size as needed */
+  object-fit: cover;
 }
 
 .description-techtonic {
@@ -211,21 +236,7 @@ body {
   text-align: justify; /* Justify the text */
 }
 
-.about-btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #003366;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.about-btn:hover {
-  background-color: #2196f3;
-}
-
+/* Crack & Stack */
 .about-crack {
   width: 400px; /* Adjust size as needed */
   height: 400px; /* Adjust size as needed */
@@ -242,10 +253,34 @@ body {
   margin-left: 50px;
 }
 
+/* Learn More Button */
+.about-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+  background-color: #2196f3;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .about-row {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center-align items in the column */
+  }
+
+  .about-intro {
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    margin-top: 20px;
   }
 
   .about-techtonic {
@@ -270,7 +305,7 @@ body {
   .description-techtonic {
     text-align: justify;
     padding: 0px 20px 0px 20px;
-    margin-top: 200px;
+    margin-top: 20px;
   }
 
   .description-crack {
@@ -278,18 +313,21 @@ body {
     padding: 0px 20px 0px 20px;
     margin-left: 0px;
   }
-
 }
+
 
 
 /* Projects */
 .projects-container {
   text-align: center;
+  margin-bottom: 22rem;
+  padding-top: 10px;
 }
 
 .projects-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  
 }
 
 .projects-row {
@@ -349,6 +387,8 @@ body {
 .vlog-section {
   text-align: center;
   margin: 50px 0;
+  margin-bottom: 25rem;
+  padding-top: 20px;
 }
 
 .vlog-title {
@@ -390,6 +430,9 @@ video {
 /* Skills */
 .skills-container {
   text-align: center;
+  margin: 50px 0;
+  margin-bottom: 25rem;
+  padding-top: 20px;
 }
 
 

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="App">
+  <div class="App" id="home">
     <header class="App-header">
       <nav class="App-navbar">
         <span>My Portfolio</span>
@@ -20,7 +20,7 @@
           <ul id="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#vlog">Vlog</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <div class="App-row" id="home">
+    <div class="App-row">
       <div class="App-profile">
         <img src="profile.jpg" alt="Profile">
         
@@ -37,7 +37,7 @@
         <h1>Front-end Developer</h1>
         <p>
           I’m Ehdsell John Apan, a Bachelor of Science in Information Technology student at
-          <span class="highlight">Gordon College</span> with a strong focus on front-end development. 
+          <a class="highlight" href="https://www.facebook.com/GordonCollegeOfficial/" target="_blank" rel="noopener noreferrer">Gordon College</a> with a strong focus on front-end development. 
           I specialize in designing and building responsive, user-friendly interfaces that enhance digital experiences.
         </p>
         <div class="button-row">
@@ -51,7 +51,8 @@
 
 
 
-    <div class="about-row" id="about">
+    <!-- <div class="about-row" id="about">
+      <h1 class="about-title">ABOUT</h1>
       <div class="">
         <p class="description-techtonic">
           <span class="highlight">TechTonic Innovations</span> is my capstone team dedicated to the creation of SkillSync.cloud, a platform designed to bridge the gap between job seekers and employers by offering intelligent job matching systems. The team has played a vital role in shaping the project's innovative features and ensuring it delivers optimal results for users.
@@ -76,7 +77,43 @@
           <button class="about-btn">Learn More</button>
         </a>
       </div>
+    </div> -->
+
+    <div class="about-header" id="about">
+      <h1 class="about-main-title">ABOUT</h1>
+      <p class="about-intro">
+        Get to know the teams behind our initiatives. From innovative job-matching solutions to IT knowledge-sharing events, we are committed to driving technology forward.
+      </p>
     </div>
+    
+    <div class="about-row">
+      <div class="">
+        <p class="description-techtonic">
+          <span class="highlight">TechTonic Innovations</span> is my capstone team dedicated to the creation of SkillSync.cloud, a platform designed to bridge the gap between job seekers and employers by offering intelligent job matching systems. The team has played a vital role in shaping the project's innovative features and ensuring it delivers optimal results for users.
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=61564369937925" target="_blank" rel="noopener noreferrer">
+          <button class="about-btn">Learn More</button>
+        </a>
+      </div>
+      <div class="about-item">
+        <img src="logo techtonic.png" alt="techtonic" class="about-techtonic">
+      </div>
+    </div>
+    
+    <div class="about-row">
+      <div class="about-item">
+        <img src="logo crack.jpg" alt="techtonic" class="about-crack">
+      </div>
+      <div class="">
+        <p class="description-crack">
+          <span class="highlight">Crack & Stack</span> is our IT seminar and Educational Trips organized team, focused on enhancing knowledge-sharing and technical skill development among IT enthusiasts. My team organizes webinars and seminar events to provide valuable insights and networking opportunities in the field of IT.
+        </p>
+        <a href="https://www.facebook.com/crackandstack/" target="_blank" rel="noopener noreferrer">
+          <button class="about-btn">Learn More</button>
+        </a>
+      </div>
+    </div>
+    
 
     
     
@@ -86,7 +123,7 @@
     
 
     <div class="projects-container" id="projects">
-      <h1 class="projects-title">Projects</h1>
+      <h1 class="projects-title">PROJECTS</h1>
       <div class="projects-row">
         <a href="coding.html" target="_blank" class="project-link">
           <div class="project-card">
@@ -115,11 +152,11 @@
 
 
     
-    <div class="vlog-section">
+    <div class="vlog-section" id="vlog">
       <h1 class="vlog-title">OJT VLOG</h1>
       <div class="vlog-container" id="vlog">
         <video controls>
-          <source src="OJT First Day.mp4" type="video/mp4">
+          <source src="OJTWeek1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -131,7 +168,7 @@
 
 
     <div class="skills-container" id="skills">
-      <h1 class="skills-title">Technical Skills</h1>
+      <h1 class="skills-title">TECHNICAL SKILLS</h1>
       <div class="skills-grid">
         <div class="skill-card">
           <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" class="skill-icon">
